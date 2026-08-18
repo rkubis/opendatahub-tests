@@ -17,6 +17,7 @@ pytestmark = pytest.mark.usefixtures("skip_if_no_supported_accelerator_type")
 
 @pytest.mark.vllm_nvidia_single_gpu
 @pytest.mark.vllm_amd_gpu
+@pytest.mark.vllm_spyre
 class TestVLLMModelCarRaw:
     def test_oci_model_car_raw_openai_inference(
         self,
