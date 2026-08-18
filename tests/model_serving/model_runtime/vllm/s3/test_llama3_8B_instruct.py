@@ -32,6 +32,7 @@ pytestmark = pytest.mark.usefixtures("skip_if_no_supported_accelerator_type", "v
 
 @pytest.mark.vllm_nvidia_single_gpu
 @pytest.mark.vllm_amd_gpu
+@pytest.mark.vllm_spyre
 @pytest.mark.parametrize(
     "model_namespace, s3_models_storage_uri, serving_runtime, vllm_inference_service",
     [
